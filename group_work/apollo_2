@@ -1,1 +1,19 @@
 
+
+from selenium import webdriver
+handle = input('input your handle here:')
+# The ChromeDriver class starts the ChromeDriver server process at creation and terminates it when quit is called
+driver = webdriver.Chrome()
+driver.implicitly_wait(100)
+driver.get('http://twitter.com/'+handle)
+html = driver.find_element_by_xpath('//a[@href="/'+handle+'/followers"]')
+print (html.text)
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
