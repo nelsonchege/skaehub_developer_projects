@@ -23,8 +23,6 @@ plt.title('Total Deaths(>200), Confirmed, Recovered and Active Cases by Country'
 # labeling x and y
 plt.xlabel('Country')
 plt.ylabel('Numbers of cases')
-# method to show the graph created
-plt.show()
 # ask user if to convert into pdf
 answer =input("do you want pdf:yes/no")
 if answer =="yes":
@@ -32,3 +30,5 @@ if answer =="yes":
     plt.savefig('squares1.pdf')
 else:
     print('ok')
+# method to show the graph created
+plt.show()
